@@ -12,7 +12,8 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
      */
     $scope.addListing = function()
     {
-      $scope.listings.push($scope.new);
+      $scope.listings.push($scope.new)
+      $scope.new = undefined;
     };
     $scope.deleteListing = function(index)
     {
