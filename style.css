@@ -1,8 +1,22 @@
-#searchBar {
+
+#searchBar
+{
   margin: 15px 10px;
 }
 
-.tableWrapper {
+.jumbotron
+{
+
+  color: #2086B9;
+}
+.form-group
+{
+  color: #2086B9;
+}
+.tableWrapper
+{
+
+  color: #2086B9;
   max-height: 400px;
   overflow: auto;
 }
