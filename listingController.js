@@ -15,13 +15,20 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       $scope.listings.push($scope.new)
       $scope.new = undefined;
     };
-    $scope.deleteListing = function(index)
+    $scope.deleteListing = function(name)
     {
-        $scope.listings.splice(index, 1);
+        for(i=0;i<$scope.listings.length; i++)
+        {
+          if($scope.listings[i].name==name)
+          {
+            $scope.listings.splice(i,1);
+            return;
+          }
+        }
     };
-    $scope.showDetails = function(index)
+    $scope.showDetails = function(listing)
     {
-          $scope.detailedInfo = $scope.listings[index];
+          $scope.detailedInfo = listing;
     };
 
   }

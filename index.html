@@ -29,11 +29,11 @@
                 <th></th>
               </tr>
 
-              <tr ng-repeat="(index, building) in listings| filter: name ">
-                  <td>{{building.code}}</td>
-                  <td>{{building.name}}</td>
-                  <td><button class="btn btn-info" type="button" ng-click="showDetails(index)"> <span class="glyphicon glyphicon-th-list"></span> </button></td>
-                  <td><button class="btn btn-warning" type="button" ng-click="deleteListing(index)"> <span class="glyphicon glyphicon-trash"></span> </button></td>
+              <tr ng-repeat="listing in listings| filter: name ">
+                  <td>{{listing.code}}</td>
+                  <td>{{listing.name}}</td>
+                  <td><button class="btn btn-info" type="button" ng-click="showDetails(listing)"> <span class="glyphicon glyphicon-th-list"></span> </button></td>
+                  <td><button class="btn btn-warning" type="button" ng-click="deleteListing(listing.name)"> <span class="glyphicon glyphicon-trash"></span> </button></td>
               </tr>
 
 
@@ -58,11 +58,11 @@
             </div>
             <div class="form-group">
               <label for="code">Longitude</label>
-              <input type="text" class="form-control"  ng-model="new.longitude" placeholder="Enter Longitude">
+              <input type="text" class="form-control"  ng-model="new.coordinates.longitude" placeholder="Enter Longitude">
             </div>
             <div class="form-group">
               <label for="code">Latitude</label>
-              <input type="text" class="form-control"  ng-model="new.latitude" placeholder="Enter Building Latitude">
+              <input type="text" class="form-control"  ng-model="new.coordinates.latitude" placeholder="Enter Building Latitude">
             </div>
             <div class="form-group">
               <label for="code">Address</label>
