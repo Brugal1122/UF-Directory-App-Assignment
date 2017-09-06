@@ -39,7 +39,7 @@ var removeCable = function()
     on cable TV. Since we live in the 21st century and most courses are now web based, go ahead
     and remove this listing from your database and log the document to the console.
    */
-  Listing.findOneAndRemove({'code': 'CABL'}, function(err, listings, res)
+  Listing.findOneAndRemove({'code': 'CABL'}, function(err, listings)
   {
     if (err) throw err;
     console.log("");
