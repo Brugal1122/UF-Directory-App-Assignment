@@ -4,19 +4,39 @@
   margin: 15px 10px;
 }
 
+body
+{
+background-color: #EBE8BF;
+}
+
+h1
+{
+  text-align: center;
+  color: Orange;
+  font-size: 70px;
+}
+
+h2
+{
+  color: Orange;
+}
+table
+{
+  background-color: white;
+}
+
 .jumbotron
 {
-
-  color: #2086B9;
+  color: #1F5394;
 }
 .form-group
 {
-  color: #2086B9;
+  color: #1F5394;
 }
 .tableWrapper
 {
 
-  color: #2086B9;
+  color: #1F5394;
   max-height: 400px;
   overflow: auto;
 }
